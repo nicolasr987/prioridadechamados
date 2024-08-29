@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prioridade de Chamados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="ambev.png" alt="Logo" style="max-width: 150px; height: auto;">
+    </header>
+    <h1>Definir Prioridade em Chamados</h1>
+    <form id="chamadoForm">
+        <label for="sistema">Selecione o Sistema:</label>
+        <select id="sistema" name="sistema">
+            <option value="unidocs">Unidocs</option>
+            <option value="promas">Promas</option>
+            <option value="bees">Bees</option>
+            <option value="inventario">Inventário</option>
+            <option value="smartCargas">Smart Cargas</option>
+            <option value="dms">DMS</option>
+            <option value="egates">eGates</option>
+        </select>
+        <br><br>
+        <label for="descricao">Descrição do Chamado:</label>
+        <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="evidencia">Evidências do Erro:</label>
+        <input type="file" id="evidencia" name="evidencia">
+        <br><br>
+        <label>Prioridade:</label>
+        <input type="radio" id="alta" name="prioridade" value="alta">
+        <label for="alta">Alta</label>
+        <input type="radio" id="media" name="prioridade" value="media">
+        <label for="media">Média</label>
+        <input type="radio" id="baixa" name="prioridade" value="baixa">
+        <label for="baixa">Baixa</label>
+        <br><br>
+        <button type="submit">Enviar Chamado</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
